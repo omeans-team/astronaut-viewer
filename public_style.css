@@ -13,7 +13,7 @@ body {
   height: 100%;
 } */
 
-model-viewer {
+.model3d model-viewer {
   width: 100%;
   height: 90%;
   background-color: #ffffff;
@@ -92,7 +92,7 @@ model-viewer {
   to   { transform: translateX(-100px); }
 }
 
-model-viewer > #ar-prompt {
+.model3d model-viewer > #ar-prompt {
   position: absolute;
   left: 50%;
   bottom: 60px;
@@ -100,10 +100,10 @@ model-viewer > #ar-prompt {
   display: none;
 }
 
-model-viewer[ar-status="session-started"] > #ar-prompt {
+.model3d model-viewer[ar-status="session-started"] > #ar-prompt {
   display: block;
 }
 
-model-viewer > #ar-prompt > img {
+.model3d model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
 }
